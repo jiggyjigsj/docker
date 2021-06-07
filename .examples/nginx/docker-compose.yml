@@ -39,6 +39,8 @@ services:
       - "traefik.basic.port=80"
       - "traefik.basic.frontend.rule=Host:data.jiggyjigs.me"
       - "traefik.frontend.auth.forward.address=http://oauth:4181"
+    networks:
+      jitsi:
 
 volumes:
   db:
