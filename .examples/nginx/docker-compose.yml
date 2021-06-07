@@ -16,7 +16,7 @@ services:
     image: matomo:fpm-alpine
     restart: always
     links:
-      - matomo-app
+      - matomo-db
     volumes:
       - matomo:/var/www/html
     environment:
